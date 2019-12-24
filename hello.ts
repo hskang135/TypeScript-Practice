@@ -1,5 +1,5 @@
 var message: string = 'Hello World';
-console.log(message);
+//console.log(message);
 
 let isDone: boolean = false;
 let decimal: number = 10;
@@ -16,14 +16,14 @@ let arr: Array<number> = [1, 2, 3];
 let x: [string, number];
 x = ["hello", 100];
 // x = [200, "hello"]; // error
-console.log(x[0].substring(1));
+//console.log(x[0].substring(1));
 
 // enum Color {Red=1, Blue, Green}
 // let c: Color = Color.Green;
 
 enum Color {Red = 1, Green, Blue};
 let colorName: string = color[2];
-console.log(colorName);
+//console.log(colorName);
 
 let notSure: any = 4;
 notSure = "maybe";
@@ -41,19 +41,26 @@ var score1:number = 50;
 var score2:number = 42.50;
 var sum = score1 + score2;
 
-console.log("name"+name); 
-console.log("first score: "+score1);
-console.log("second score: "+score2); 
-console.log("sum of the scores: "+sum);
+// console.log("name"+name); 
+// console.log("first score: "+score1);
+// console.log("second score: "+score2); 
+// console.log("sum of the scores: "+sum);
 
-var name = "John";
-var score1 = 50;
-var score2 = 42.50;
-var sum = score1 + score2;
+interface Contact {
+  name: string,
+  email: string,
+  phone: string
+};
 
-console.log("name" + name);
-console.log("first score: " + score1);
-console.log("second score : " + score2);
-console.log("sum of the scores: " + sum);
+var addressBook: Contact[] = [];
+
+var Contact: Contact = {
+  name: "Heesu",
+  email: "hskang135@gmail.com",
+  phone: "201-903-6879"
+}
+
+addressBook.push(Contact);
+console.log(Contact);
 
 
